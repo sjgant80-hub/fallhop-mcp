@@ -1,26 +1,28 @@
 {
   "name": "@ai-native-solutions/fallhop-mcp",
   "version": "1.0.0",
-  "description": "MCP (stdio) server exposing fallhop-sdk: serialize/deserialize Bitchat wire packets and translate to a neutral did:key envelope.",
+  "description": "fallhop MCP server · stdio wrapper around @ai-native-solutions/fallhop-sdk",
   "type": "module",
   "main": "src/index.js",
   "bin": {
     "fallhop-mcp": "src/index.js"
   },
   "files": ["src", "README.md", "LICENSE"],
-  "dependencies": {
-    "@ai-native-solutions/fallhop-sdk": "^1.0.0",
-    "@modelcontextprotocol/sdk": "^1.0.0"
-  },
   "scripts": {
     "start": "node src/index.js"
   },
-  "keywords": ["mcp", "bitchat", "mesh", "did", "translator", "claude"],
+  "keywords": ["fallhop", "mcp", "model-context-protocol", "ai-native-solutions"],
   "author": "AI-Native Solutions",
   "license": "MIT",
-  "homepage": "https://github.com/sjgant80-hub/fallhop-mcp",
   "repository": {
     "type": "git",
     "url": "https://github.com/sjgant80-hub/fallhop-mcp.git"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@ai-native-solutions/fallhop-sdk": "^1.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
